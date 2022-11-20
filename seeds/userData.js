@@ -1,4 +1,7 @@
-[
+const { User } = requre('../models');
+
+const userData =
+  [
     {
       "name": "Sal",
       "email": "sal@hotmail.com",
@@ -14,5 +17,9 @@
       "email": "amiko2k20@aol.com",
       "password": "password12345"
     }
-  ]
+  ];
+
+const userSeeds = () => User.bulkCreate(userData);
+
+module.exports = userSeeds;
   
